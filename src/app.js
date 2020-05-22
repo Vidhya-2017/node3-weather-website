@@ -40,9 +40,6 @@ app.get('/help', (req, res) => {
         name: 'Vidhya'
     })
 })
-// app.get('', (req, res) => {
-//     res.send('public');
-// })
 
 // app.get('/help', (req, res) => {
 //     res.send([{
