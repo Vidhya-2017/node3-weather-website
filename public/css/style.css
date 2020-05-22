@@ -1,0 +1,41 @@
+/* h1{
+    color:gray;
+}
+
+img{
+    width:250px;
+} */
+
+footer{
+    color:#888888;
+    border-top: 1px solid #eeeeee;
+    position: fixed;
+    bottom: 0;
+    margin:16px;
+    padding:16px;
+}
+
+body{
+    color:#333333;
+    font-family: sans-serif;
+    max-width: 650px;
+    margin:0 auto;
+    padding:0 16px;
+}
+a{
+    padding: 10px;
+    color:#333333;
+}
+
+input {
+    border:1px solid #cccccc;
+    height:20px;
+    padding:1px;
+
+}
+
+button{
+    cursor: pointer;
+    border:1px solid #888888;
+    background-color: #888888;
+}
