@@ -81,10 +81,11 @@ app.get('/weather', (req, res) => {
             res.send({
                 msg: "success",
                 geoData: geoData,
-                foreCastData: foreCastData,
-                currentTemperature: 0,
-                feelslike: 10,
-                location: req.query.address
+                result: foreCastData.Composed,
+                // foreCastData: foreCastData,
+                // currentTemperature: 0,
+                // feelslike: 10,
+                // location: req.query.address
             });
 
         })

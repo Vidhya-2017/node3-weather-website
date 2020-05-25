@@ -30,9 +30,9 @@ weatherForm.addEventListener('submit', (e) => {
             }
             else {
                 // console.log(data);
-                message2.textContent = JSON.stringify(data.foreCastData);
-                console.log(data.location);
-                console.log(data.foreCastData)
+                message2.textContent = JSON.stringify(data.result);
+                console.log(data);
+                // console.log(data)
                 message1.textContent = '';
 
             }

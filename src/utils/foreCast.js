@@ -9,14 +9,19 @@ const foreCast = (area, callback) => {
         }else if(response.body.error){
             callback('Unable to Fetch the Temperature ', undefined);
         }else{
+            const result =  " Current temperature is " + response.body.current.temperature +
+                            " But Feels as if it is " + response.body.current.feelslike+
+                            " in the Location " + response.body.location.name +
+                            " Weather is " + response.body.current.weather_descriptions[0]
             callback(undefined,{
                 currentTemperature: response.body.current.temperature,
                 FeelsLike: response.body.current.feelslike,
                 Weather: response.body.current.weather_descriptions[0],
-                location: response.body.location.name
+                location: response.body.location.name,
+                Composed: result
             });
         }
     });
 }
 
-module.exports = foreCast;
+module.exports = foreCast; 
